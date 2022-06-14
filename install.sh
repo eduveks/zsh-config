@@ -2,7 +2,7 @@
 
 sudo apt update
 
-sudo apt install -y zsh
+sudo apt install -y zsh git
 
 chsh -s $(which zsh)
 
