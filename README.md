@@ -6,7 +6,6 @@ Here are my tips for the installation and configuration of the ZSH.
 
 ```
 sh -c "$(curl -fsSL https://raw.github.com/eduveks/zsh-config/master/install.sh)"
-
 ```
 
 > When Oh My ZSH launch the ZSH prompt, execute the `exit` command to continue.
