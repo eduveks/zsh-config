@@ -14,6 +14,6 @@ zsh -c 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_
 
 awk '{sub("robbyrussell","ys")}1' ~/.zshrc > ~/.zshrc.tmp && mv ~/.zshrc.tmp ~/.zshrc
 
-awk '{sub("plugins=\(git","plugins=(git emacs zsh-autosuggestions zsh-syntax-highlighting")}1' ~/.zshrc > ~/.zshrc.tmp && mv ~/.zshrc.tmp ~/.zshrc
+awk '{sub("plugins=\\(git","plugins=(git emacs zsh-autosuggestions zsh-syntax-highlighting")}1' ~/.zshrc > ~/.zshrc.tmp && mv ~/.zshrc.tmp ~/.zshrc
 
 echo "alias e=\"bash -c emacs\"" >> ~/.zshrc
