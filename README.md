@@ -2,19 +2,35 @@
 
 Here are my tips for the installation and configuration of the ZSH.
 
-## Installation
+## Installation - sudo required
+
+Installation of the requirements zsh and git with `sudo` command, after then the `config.sh` is executed to setup the user environment.
+
+If you have `sudo` just execute this:
 
 ```
 sh -c "$(curl -fsSL https://raw.github.com/eduveks/zsh-config/master/install.sh)"
 ```
 
-> When Oh My ZSH launch the ZSH prompt, execute the `exit` command to continue.
+> When Oh My ZSH launch the ZSH prompt just execute the `exit` command to continue.
 
-## Configuration
+## Auto Configuration - non-sudo
 
-The installation above will configure the theme `ys` instead of the `robbyrussell`.
+If you not have permission to execute the `sudo` command but the zsh and git is already installed.
 
-The plugins `zsh-autosuggestions` and `zsh-syntax-highlighting` will be installed and activated with the `emacs` plugin.
+Just execute this to auto config you user environment with ZSH shell as default in your terminal:
+
+```
+sh -c "$(curl -fsSL https://raw.github.com/eduveks/zsh-config/master/config.sh)"
+```
+
+> When Oh My ZSH launch the ZSH prompt just execute the `exit` command to continue.
+
+## What is Happen
+
+The `install.sh` will execute the sudo command to install the requirements such as zsh and git.
+
+The `config.sh` configures the theme `ys` instead of the `robbyrussell`, and the plugins `zsh-autosuggestions` and `zsh-syntax-highlighting` will be installed and activated with the `emacs` plugin.
 
 ### Emacs
 
